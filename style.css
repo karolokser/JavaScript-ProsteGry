@@ -1,0 +1,155 @@
+body 
+{
+	background: #222222;
+	color: lightgray;
+	font-size: 24px;
+}
+
+#element
+{
+	margin-left:auto;
+	margin-right: auto;
+	font-size: 32px;
+	border:3px solid lightgray;
+	border-radius: 10px;
+	text-align: center;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 965px;
+}
+
+#pojemnik
+{
+	width: 580px;
+	margin-top: 30px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+#memory
+{
+	float: left;
+	margin: 10px;
+	filter: brightness(70%);
+}
+#memory:hover
+{
+	filter: brightness(100%);
+}
+#hangman
+{
+	float: left;
+	margin: 10px;
+	filter: brightness(70%);
+	
+}
+#hangman:hover
+{
+	filter: brightness(100%);
+}
+#puzel
+{
+	float: left;
+	margin: 10px;
+	filter: brightness(70%);
+}
+#puzel:hover
+{
+	filter: brightness(100%);
+}
+#pierwsze
+{
+	float: left;
+	margin: 10px;
+	filter: brightness(70%);
+}
+#pierwsze:hover
+{
+	filter: brightness(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#slider 
+{ 
+margin-top: 50px
+	min-height: 350px;
+ margin-left: auto;
+ margin-right: auto;
+ clear: both;
+
+}
+#ramka
+{
+width: 1000px;
+height: 1000px;
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 30px;
+
+}
+#ramkawew
+{
+width: 170px;
+height: 40px;
+font-size: 30px;
+margin-left: auto;
+ margin-right: auto;
+ color: #C0C0C0;
+ margin-bottom: 30px;
+}
+#p1
+{
+float: left; text-align: center; width: 30px;
+	height: 30px; cursor:pointer;
+ border: 3px solid #C0C0C0; margin: 5px; padding:5px; border-radius: 18px;
+}
+#p1:hover
+{
+border: 3px solid white; margin: 5px; padding:5px; border-radius: 18px; color: white; background-color: #555555;
+}
+#p2
+{
+float: left; text-align: center; width: 30px;
+	height: 30px; cursor:pointer;
+ border: 3px solid #C0C0C0; margin: 5px; padding:5px; border-radius: 18px;
+}
+#p2:hover
+{
+border: 3px solid white; margin: 5px; padding:5px; border-radius: 18px; color: white; background-color: #555555;
+}
+#p3
+{
+float: left; text-align: center; width: 30px;
+	height: 30px; cursor:pointer;
+ border: 3px solid #C0C0C0; margin: 5px; padding:5px; border-radius: 18px;
+}
+#p3:hover
+{
+border: 3px solid white; margin: 5px; padding:5px; border-radius: 18px; color: white; background-color: #555555;
+}
+
+
+
+

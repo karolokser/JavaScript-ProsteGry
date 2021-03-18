@@ -1,0 +1,110 @@
+<html>
+<head><title>Pierwsze Zajêcia</title>
+<style>
+div {position:absolute;}
+#obszar1  {top:100px; left:150px; width:200px; height:100px; background:blue; margin:5px; padding:5px; border:10px solid red; }
+#obszar2  {top:230px; left:380px; width:200px; height:100px; background:yellow; margin:5px; padding:5px; border:10px solid blue; }
+</style>
+<script>
+
+function Powitanie(){var x = prompt("Podaj Imiê", " "); alert("Witaj! " + x);}
+
+function Plus(){form1.wynik.value = parseFloat(form1.okno1.value) + parseFloat(form1.okno2.value);}
+function Minus(){form1.wynik.value = parseFloat(form1.okno1.value) - parseFloat(form1.okno2.value);}
+function Podzieliæ(){form1.wynik.value = parseFloat(form1.okno1.value) / parseFloat(form1.okno2.value);}
+function Pomno¿yæ(){form1.wynik.value = parseFloat(form1.okno1.value) * parseFloat(form1.okno2.value);}
+function pierwiastkowanie(){ form1.wynik.value = Math.sqrt(form1.okno1.value);}
+function Silnia(){
+var f = 1;
+for (var i=1; i<=form1.okno1.value; i++)
+{
+f=f*i;
+}
+ form1.wynik.value=f;
+ }
+
+function potêgowanie(){
+var g = form1.okno1.value; 
+var d = form1.okno1.value;
+var c = form1.okno2.value;
+for (var i=1; i<c ; i++)
+{
+g=g*d;
+}
+ form1.wynik.value=g;
+if (form1.okno2.value == 0) form1.wynik.value=-1;
+ }
+ 
+
+function Zmiana(x){
+x.style.width=form2.a1.value;
+x.style.height=form2.a2.value;
+x.style.top=form2.a3.value;
+x.style.left=form2.a4.value;
+x.style.background=form2.a5.value;
+x.style.borderStyle=form3.b5.value;
+x.style.borderColor=form3.b6.value;
+}
+
+function Widok(a){
+if (a.style.visibility=="visible")
+a.style.visibility="hidden";
+else
+a.style.visibility="visible";
+}
+
+</script>
+</head>
+
+<body>
+
+<div id="obszar1" onclick="Zmiana(this)"></div>
+<div id="obszar2" onclick="Zmiana(this)"></div>
+
+<form name = "form1" style="position:absolute; top:400px; left:50px;">
+<input type="text" name="okno1">
+<input type="button" value="+" onclick="Plus()">
+<input type="button" value="-" onclick="Minus()">
+<input type="button" value="/" onclick="Podzieliæ()">
+<input type="button" value="*" onclick="Pomno¿yæ()">
+<input type="button" value="!" onclick="Silnia()">
+<input type="button" value="pow" onclick="potêgowanie()">
+<input type="button" value="sqrt" onclick="pierwiastkowanie()">
+<input type="text" name="okno2"><br><hr>
+<input type="text" name="wynik">
+
+</form>
+
+<form name = "form2" style="position:absolute; top:500px; left:50px;">
+width<input type="text" name="a1">
+height<input type="text" name="a2">
+top<input type="text" name="a3">
+left<input type="text" name="a4">
+
+background<input list="kolor" name="a5">
+<datalist id="kolor">
+<option value="blue"><option value="red">
+<option value="green"><option value="violet">
+</datalist>
+
+
+</form>
+<form name = "form3" style="position:absolute; top:600px; left:50px;">
+borderStyle<input list="style" name="b5">
+<datalist id="style">
+<option value="dashed"><option value="dotted">
+<option value="double"><option value="solid">
+</datalist>
+
+borderColor<input list="color" name="b6">
+<datalist id="color">
+<option value="red"><option value="black">
+<option value="green"><option value="yellow">
+</datalist>
+<input onclick="Widok(obszar1)" type="button" value="1">
+<input type="button" value="2" onclick="Widok(obszar2)">
+
+</form>
+
+</body>
+</html>
